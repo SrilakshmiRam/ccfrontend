@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import BookingForm from './components/BookingForm'
+import PaymentPage from './components/PaymentPage'
+import Students from './components/Students'
 
-export default App;
+const App=()=>(
+  <BrowserRouter>
+    <Routes>
+      <Route exact path='/bookings' element={<BookingForm/>} />
+      <Route exact path='/payment' element={<PaymentPage />} />
+      <Route exact path="/" element={<Students />} />
+    </Routes>
+  </BrowserRouter>
+)
+
+
+export default App

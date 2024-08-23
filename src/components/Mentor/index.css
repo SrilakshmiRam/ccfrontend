@@ -1,0 +1,51 @@
+.mentor-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    background-color: #fff;
+    width: 280px;
+    height: 360px;
+}
+
+.mentor-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mentor-card-header h3 {
+    margin: 0;
+}
+
+.premium-badge {
+    background-color: #ffdd00;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.mentor-card-body {
+    margin-top: 10px;
+}
+
+.mentor-expertise,
+.mentor-availability {
+    margin-bottom: 10px;
+}
+
+.mentor-expertise ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mentor-expertise li {
+    padding: 4px 0;
+}
+
+
+.day-time{
+    font-size: 14px;
+}

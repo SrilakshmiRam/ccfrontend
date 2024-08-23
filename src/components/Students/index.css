@@ -1,0 +1,169 @@
+/* General styles for all devices */
+.student-page {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* For the "Unlock Your Learning Journey" heading */
+h1:first-of-type {
+    font-size: 28px;
+    color: #007BFF; /* A vibrant blue to grab attention */
+}
+
+/* For the "Booking Details" heading */
+h1:nth-of-type(2) {
+    font-size: 24px;
+    color: #28A745; /* A fresh green to signify details */
+    text-decoration: underline;
+}
+
+/* Button styles */
+.bookBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Table styles for larger devices */
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.booking-table th, .booking-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.booking-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.booking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive styles for small and extra-small devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .bookBtn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .booking-table th, .booking-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .booking-table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .bookBtn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .booking-table th, .booking-table td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .booking-table {
+        font-size: 0.8rem;
+    }
+
+    /* Hide table and display cards on small screens */
+    .booking-table {
+        display: none;
+    }
+
+    .booking-cards-container {
+        display: block;
+    }
+
+    .booking-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-card h2 {
+        font-size: 1.2rem;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .booking-card p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .booking-card p span {
+        font-weight: bold;
+    }
+}
+
+/* Hide booking cards on medium, large, and extra-large devices */
+@media (min-width: 481px) {
+    .booking-cards-container {
+        display: none;
+    }
+
+    .booking-table {
+        display: table;
+    }
+}
+
+
+
+@media screen and (min-width:768px){
+    .booking-cards-container{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,142 @@
+.mentors{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.booking-form {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mentor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    list-style-type: none;
+}
+
+.mentor-card1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    max-width: 300px;
+    margin: 0 auto; /* Center cards horizontally */
+}
+
+.mentor-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mentor-card-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.booking-form-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5em; /* Larger font size for prominence */
+    font-weight: bold;
+}
+
+.premium-badge {
+    background-color: #ffdd00;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.mentor-card-body {
+    margin-top: 16px;
+}
+
+.mentor-expertise,
+.mentor-availability {
+    margin-bottom: 16px;
+}
+
+.mentor-expertise ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mentor-expertise li {
+    padding: 4px 0;
+    color: #555;
+}
+
+.mentor-availability p {
+    margin: 4px 0;
+    color: #666;
+}
+
+.booking-form-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.booking-status {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
